@@ -50,7 +50,9 @@ const About = () => {
          const token = Cookies.get("jwtToken")
 
          try{
-            const response = await axios.put("http://localhost:5000/api/user/edit-user",myForm,{
+            
+            //http://localhost:5000/api/user/edit-user
+            const response = await axios.put("https://shopping-cart-with-auth.onrender.com/api/user/edit-user",myForm,{
                 headers: {
                     Authorization: `Bearer ${token}`,
                   },
@@ -100,7 +102,9 @@ const About = () => {
         //console.log(token);
 
         try {
-            const res = await fetch("http://localhost:5000/api/about/", {
+            //
+            //http://localhost:5000/api/about/
+            const res = await fetch("https://shopping-cart-with-auth.onrender.com/api/about/", {
                 method: "GET",
                 headers: {
                     Accept: "application/json",
@@ -152,7 +156,7 @@ const About = () => {
 
                         <div>                    
                             <div className="text-center">
-                            <img className="rounded-5" src={`http://localhost:5000/userImages/${aboutData.image}`} alt="user image" /><br />
+                            <img className="rounded-5" src={`https://shopping-cart-with-auth.onrender.com/userImages/${aboutData.image}`} alt="user image" /><br />
                             <input className="form-control mt-2 mb-2" type="file" name="image" onChange={setData}/>
                             </div>
                             

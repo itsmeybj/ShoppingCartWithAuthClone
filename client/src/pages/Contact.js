@@ -19,8 +19,9 @@ const Contact = () => {
         if (token) {
 
             //Note - instead of doing this we can create one common auth moddlewar for all router
-
-            const res = await fetch("http://localhost:5000/api/contact", {
+//
+//http://localhost:5000/api/contact
+            const res = await fetch("https://shopping-cart-with-auth.onrender.com/api/contact", {
                 method: "GET",
                 headers: {
                     Accept: 'application/json',
@@ -72,7 +73,8 @@ const Contact = () => {
 
         if (token) {
             try {
-                const res = await fetch("http://localhost:5000/api/contact/submit-contact", {
+                //http://localhost:5000/api/contact/submit-contact
+                const res = await fetch("https://shopping-cart-with-auth.onrender.com/api/contact/submit-contact", {
                     method: 'POST',
                     headers: {
                         Accept: 'application/json',

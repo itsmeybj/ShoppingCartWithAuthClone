@@ -16,8 +16,9 @@ const Home = () => {
         if (token) {
 
             //Note - instead of doing this we can create one common auth moddlewar for all router
-
-            const res = await fetch("http://localhost:5000/api/home", {
+//
+//http://localhost:5000/api/home
+            const res = await fetch("https://shopping-cart-with-auth.onrender.com/api/home", {
                 method: "GET",
                 headers: {
                     Accept: 'application/json',

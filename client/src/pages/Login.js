@@ -50,8 +50,9 @@ const Login = () => {
 
         // const cookieParser = require("cookie-parser")
         // app.use(cookieParser())
-        
-        const res = await fetch("http://localhost:5000/api/user/login",{
+        //
+        //http://localhost:5000/api/user/login
+        const res = await fetch("https://shopping-cart-with-auth.onrender.com/api/user/login",{
             method:"post",
             credentials:"include",
             headers:{

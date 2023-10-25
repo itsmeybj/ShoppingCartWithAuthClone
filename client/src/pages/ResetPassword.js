@@ -30,7 +30,9 @@ const ResetPassword = () => {
         }
 
         try {
-            const res = await fetch('http://localhost:5000/api/user/reset-password', {
+            //
+            //http://localhost:5000/api/user/reset-password
+            const res = await fetch('https://shopping-cart-with-auth.onrender.com/api/user/reset-password', {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"

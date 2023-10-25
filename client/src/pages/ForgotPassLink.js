@@ -23,7 +23,9 @@ const ForgotPassLink = () => {
         e.preventDefault();
 
         try {
-            const res = await fetch('http://localhost:5000/api/user/forgot-password', {
+            //
+            //http://localhost:5000/api/user/forgot-password
+            const res = await fetch('https://shopping-cart-with-auth.onrender.com/api/user/forgot-password', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

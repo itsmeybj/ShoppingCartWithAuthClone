@@ -29,7 +29,9 @@ const ChangePassword = () => {
         const token = Cookies.get('jwtToken')
 
         try {
-            const res = await fetch("http://localhost:5000/api/user/update-password", {
+            //
+            //http://localhost:5000/api/user/update-password
+            const res = await fetch("https://shopping-cart-with-auth.onrender.com/api/user/update-password", {
                 method: "PUT",
                 headers: {
                     Accept: "application/json",
