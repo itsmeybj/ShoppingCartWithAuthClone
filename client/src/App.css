@@ -1,0 +1,6 @@
+.active{
+    background-color: burlywood;
+}
+input[type=text]:focus {
+    border: none;
+}

@@ -1,0 +1,6 @@
+{
+    "app_title" : "Arebic - i18n App",
+    "language" : "Arebic",
+    "welcome_to_react": "Arebic -to react-i18next",
+    "day_since_release" : "Arebic -  {{number_of_days}}"
+}

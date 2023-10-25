@@ -1,0 +1,6 @@
+{
+    "app_title" : "i18n App",
+    "language" : "enlish",
+    "welcome_to_react": "english- Welcome to React and react-i18next",
+    "day_since_release" : "english - {{number_of_days}}"
+}
